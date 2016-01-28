@@ -14,6 +14,8 @@
 		3F150F5A1C54611A0096C6CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F150F581C54611A0096C6CE /* LaunchScreen.storyboard */; };
 		3F150F651C54611B0096C6CE /* TextFieldChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F150F641C54611B0096C6CE /* TextFieldChallengeTests.swift */; };
 		3F150F701C54611B0096C6CE /* TextFieldChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F150F6F1C54611B0096C6CE /* TextFieldChallengeUITests.swift */; };
+		3F150F7F1C5894750096C6CE /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F150F7E1C5894750096C6CE /* ZipCodeDelegate.swift */; };
+		3F150F811C589A6B0096C6CE /* CurrencyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F150F801C589A6B0096C6CE /* CurrencyDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3F150F6B1C54611B0096C6CE /* TextFieldChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F150F6F1C54611B0096C6CE /* TextFieldChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldChallengeUITests.swift; sourceTree = "<group>"; };
 		3F150F711C54611B0096C6CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F150F7E1C5894750096C6CE /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
+		3F150F801C589A6B0096C6CE /* CurrencyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		3F150F4E1C54611A0096C6CE /* TextFieldChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				3F150F7D1C58944C0096C6CE /* TextFeildDelegates */,
 				3F150F4F1C54611A0096C6CE /* AppDelegate.swift */,
 				3F150F511C54611A0096C6CE /* ViewController.swift */,
 				3F150F531C54611A0096C6CE /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				3F150F711C54611B0096C6CE /* Info.plist */,
 			);
 			path = TextFieldChallengeUITests;
+			sourceTree = "<group>";
+		};
+		3F150F7D1C58944C0096C6CE /* TextFeildDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				3F150F7E1C5894750096C6CE /* ZipCodeDelegate.swift */,
+				3F150F801C589A6B0096C6CE /* CurrencyDelegate.swift */,
+			);
+			name = TextFeildDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F150F521C54611A0096C6CE /* ViewController.swift in Sources */,
+				3F150F7F1C5894750096C6CE /* ZipCodeDelegate.swift in Sources */,
 				3F150F501C54611A0096C6CE /* AppDelegate.swift in Sources */,
+				3F150F811C589A6B0096C6CE /* CurrencyDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

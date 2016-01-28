@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,102 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f4i-gW-KMV">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Jm-Hl-qYR">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fo9-Sw-2HT">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zuX-48-cRH">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f4i-gW-KMV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Uu-3M-WbI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f4i-gW-KMV" secondAttribute="trailing" id="9Ps-Ek-0B7"/>
+                            <constraint firstItem="1Jm-Hl-qYR" firstAttribute="top" secondItem="f4i-gW-KMV" secondAttribute="bottom" constant="27" id="B6U-qa-9Zo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Fo9-Sw-2HT" secondAttribute="leading" id="DD3-er-U0F"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="f4i-gW-KMV" secondAttribute="leading" id="Nlf-G4-Wtx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zuX-48-cRH" secondAttribute="trailing" id="Plx-R7-6m7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Fo9-Sw-2HT" secondAttribute="leading" id="VAG-tb-frp"/>
+                            <constraint firstItem="f4i-gW-KMV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="Vav-kw-y1Z"/>
+                            <constraint firstItem="1Jm-Hl-qYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="izS-sl-d3w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Jm-Hl-qYR" secondAttribute="trailing" id="mN9-MR-kRQ"/>
+                            <constraint firstItem="zuX-48-cRH" firstAttribute="top" secondItem="1Jm-Hl-qYR" secondAttribute="bottom" constant="27" id="nxd-Pq-TWI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1Jm-Hl-qYR" secondAttribute="leading" id="qDI-As-cFu"/>
+                            <constraint firstItem="zuX-48-cRH" firstAttribute="leading" secondItem="Fo9-Sw-2HT" secondAttribute="trailing" constant="30" id="qOv-Ah-1Qb"/>
+                            <constraint firstItem="Fo9-Sw-2HT" firstAttribute="top" secondItem="1Jm-Hl-qYR" secondAttribute="bottom" constant="28" id="y9O-rd-t91"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="f4i-gW-KMV"/>
+                                <exclude reference="1Jm-Hl-qYR"/>
+                                <exclude reference="Fo9-Sw-2HT"/>
+                                <exclude reference="zuX-48-cRH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1Uu-3M-WbI"/>
+                                <exclude reference="9Ps-Ek-0B7"/>
+                                <exclude reference="Nlf-G4-Wtx"/>
+                                <exclude reference="Vav-kw-y1Z"/>
+                                <exclude reference="B6U-qa-9Zo"/>
+                                <exclude reference="izS-sl-d3w"/>
+                                <exclude reference="mN9-MR-kRQ"/>
+                                <exclude reference="qDI-As-cFu"/>
+                                <exclude reference="DD3-er-U0F"/>
+                                <exclude reference="VAG-tb-frp"/>
+                                <exclude reference="y9O-rd-t91"/>
+                                <exclude reference="Plx-R7-6m7"/>
+                                <exclude reference="nxd-Pq-TWI"/>
+                                <exclude reference="qOv-Ah-1Qb"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="f4i-gW-KMV"/>
+                                <include reference="1Jm-Hl-qYR"/>
+                                <include reference="Fo9-Sw-2HT"/>
+                                <include reference="zuX-48-cRH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1Uu-3M-WbI"/>
+                                <include reference="9Ps-Ek-0B7"/>
+                                <include reference="Nlf-G4-Wtx"/>
+                                <include reference="Vav-kw-y1Z"/>
+                                <include reference="B6U-qa-9Zo"/>
+                                <include reference="izS-sl-d3w"/>
+                                <include reference="mN9-MR-kRQ"/>
+                                <include reference="qDI-As-cFu"/>
+                                <include reference="DD3-er-U0F"/>
+                                <include reference="VAG-tb-frp"/>
+                                <include reference="y9O-rd-t91"/>
+                                <include reference="Plx-R7-6m7"/>
+                                <include reference="nxd-Pq-TWI"/>
+                                <include reference="qOv-Ah-1Qb"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="currencyTextField" destination="1Jm-Hl-qYR" id="JcS-nX-Ecu"/>
+                        <outlet property="editSwitch" destination="zuX-48-cRH" id="iLg-Xi-6xR"/>
+                        <outlet property="editText" destination="Fo9-Sw-2HT" id="3LC-Ij-pv1"/>
+                        <outlet property="zipCodeTextField" destination="f4i-gW-KMV" id="P5O-GD-g0Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="885" y="670"/>
         </scene>
     </scenes>
 </document>
